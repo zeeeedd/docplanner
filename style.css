@@ -1,4 +1,430 @@
 .header{
     display: flex;
+    justify-content: space-around;
+    
+}
+ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+li{
+    color: #ababab;
+    font-weight: 400;
+    font-family: Roboto, Alias, sans-serif ;
+    transition:  0.3s ease; 
+    cursor: pointer;
+    
 }
 
+.Career:hover{
+    color: #00ccb1;
+
+}
+.Departments:hover{
+    color: #01b39b;
+}
+.About-us{
+    color: #00bfa5;
+    transition: 0.3s ease;
+}
+.About-us:hover{
+    color: #b3bab9;
+}
+.home-logo{
+    display: flex;
+}
+.home-logo img{
+    width: 80px;
+}
+h1{
+    font-size: 2.125rem;;
+    color: #01c1a5;
+    font-family: Work sans;
+    font-weight: 300;
+}
+span{
+    color: #ababab;
+}
+.lwast-hh{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.lwast-hh img{
+    width: 90px;
+}
+.title-of-center{
+
+    color: #01b39b;
+    font-weight: 200;
+    letter-spacing: -.3px;
+    margin-top: 0;
+}
+.about-us-paragraph{
+
+    display: flex;
+    font-weight: 400;
+    color: #7c7d7c;
+    font-size: 17px;
+    line-height: 1.75;
+    margin-left: 150px;
+    margin-top: 0;
+    gap: 40px;
+    width: 80%;
+}
+.services-item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 600px;
+    background-color: #00ccb1;
+    width: 300px;
+    height: 350px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
+    
+}
+.patients-img{
+    width: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+}
+h3, h2 {
+    margin-left: 40px;
+    color: white;
+    font-family: Work sans;
+    font-weight: 300;
+}
+h3{
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 10px;
+
+}
+.style-select{
+    appearance: none; /* Remove default select styling */
+            -webkit-appearance: none; /* For WebKit browsers (Safari, Chrome) */
+            -moz-appearance: none; /* For Firefox */
+            background-color: #00ccb1; /* Background color */
+            border: 0px; /* Remove borders */
+            outline: none; /* Remove outline */
+            font-family: 'Work Sans', sans-serif; /* Font */
+            cursor: pointer; /* Pointer cursor */
+            font-size: 20px; /* Font size */
+            margin-left: 19px; /* Left margin */
+            margin-top: 30px; /* Top margin */
+            color: white; /* Text color */
+            font-weight: 300; /* Font weight */
+            padding: 10px 40px 10px 20px; /* Padding to make space for the arrow */
+            position: relative; /* Relative positioning for the arrow */
+}
+.style-select2{
+    appearance: none; /* Remove default select styling */
+    -webkit-appearance: none; /* For WebKit browsers (Safari, Chrome) */
+    -moz-appearance: none; /* For Firefox */
+    background-color: #3d83df; /* Background color */
+    border: 0px; /* Remove borders */
+    outline: none; /* Remove outline */
+    font-family: 'Work Sans', sans-serif; /* Font */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 20px; /* Font size */
+    margin-left: 19px; /* Left margin */
+    margin-top: 30px; /* Top margin */
+    color: white; /* Text color */
+    font-weight: 300; /* Font weight */
+    padding: 10px 40px 10px 20px; /* Padding to make space for the arrow */
+    position: relative; /* Relative positioning for the arrow */
+
+}
+.style-select3{
+
+    appearance: none; /* Remove default select styling */
+    -webkit-appearance: none; /* For WebKit browsers (Safari, Chrome) */
+    -moz-appearance: none; /* For Firefox */
+    background-color: #1b2734; /* Background color */
+    border: 0px; /* Remove borders */
+    outline: none; /* Remove outline */
+    font-family: 'Work Sans', sans-serif; /* Font */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 20px; /* Font size */
+    margin-left: 19px; /* Left margin */
+    margin-top: 30px; /* Top margin */
+    color: white; /* Text color */
+    font-weight: 300; /* Font weight */
+    padding: 10px 40px 10px 20px; /* Padding to make space for the arrow */
+    position: relative; /* Relative positioning for the arrow */
+
+}
+
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-top:50px
+
+
+}
+.for-doctors{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 600px;
+    background-color: #3d83df;
+    width: 300px;
+    height: 350px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
+    
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+    }
+    100% {
+        opacity: 1; /* Fully visible at the end */
+    }
+}
+.for-clinics{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 600px;
+    background-color: #1b2734;
+    width: 300px;
+    height: 350px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
+
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+    }
+    100% {
+        opacity: 1; /* Fully visible at the end */
+    }
+}
+.doctor-names h2{
+    color: #25b69b;
+    font-family: Work sans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 26px;
+    margin-left: 110px;
+    margin-top: 50px;
+    
+    
+}
+.doctor-names{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.tkharbi9{
+    display: flex;
+    flex-wrap: wrap;   
+    padding: 0px;
+    width: 400px;
+}
+.section3{
+    background: #d9f5f5;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.main-title{
+    font-family: Work sans;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.second-title{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    color:  rgb(116, 116, 116);
+    font-size: 13px;
+    line-height: 19px;
+    font-style: normal;
+}
+.div1{
+    width: 55%;
+}
+.div2{
+    margin-left: 70px;
+}
+.div4{
+    display: flex;
+    width: 55%;
+
+}
+
+.div5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px ;
+    margin-top: 30px;
+}
+
+
+.div6{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.div7{
+    background-color: white;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 100px;
+
+}
+.div8{
+    margin-left: 30px;
+    margin-top: 4px;
+    gap: 90px;
+}
+   
+.div9{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 60px;
+    padding-left: 30px;
+
+
+}
+.amount-of-people{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Work sans;
+    margin-left: 40px;
+}
+.div10{
+    background-color: white;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 120px;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+.njma{
+    margin-top: 30px;
+    margin-right: 12;
+}
+.img1{
+    margin-left: 85px;
+    margin-top: 20px;
+
+}
+.img2{
+    margin-left: 75px;
+    margin-top: 20px;
+
+
+
+}
+.img3{
+    margin-left: 60px;
+    margin-top: 20px;
+
+
+
+}
+.img4{
+    margin-left: 95px;
+    margin-top: 20px;
+
+
+
+}
+.leader-countries{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Work sans;
+    margin-left: 45px;
+}
+.countries , .booked, .visits, .trust{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    color:  rgb(116, 116, 116);
+    font-size: 13px;
+    line-height: 17px;
+    font-style: normal;
+}
+.div11{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.div12, .div13, .div14, .div15, .div16, .div17{
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.img5, .img6, .img7, .img8, .img9, .img10{
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.Barcelona, .Warsaw, .Munich, .Istanbul, .Rome, .Bologna{
+    font-size: 15px;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 400px;
+    color: rgb(116, 116, 116);
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+
+
+}
+.jama3a1, .jama3a2{
+    display: flex;
+    gap: 20px;
+    margin-left: 140px;
+
+}
+.jama3a2{
+    margin-top: 20px;
+}
+.square-button {
+    padding: 10px 20px; /* Padding for size */
+    background-color: #4285f4; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Adjust text size */
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+.sqaure-button:hover {
+  background-color: #3b424d; /* Darker blue on hover */
+}
